@@ -165,69 +165,24 @@ Splitting the sentence into words or making an inventory of words from a string 
 
 Named entity recognition (NER), or named entity extraction is a keyword extraction technique that uses natural language processing (NLP) to automatically identify named entities within raw text and classify them into predetermined categories, like people, organizations, email addresses, locations, values, etc.
 
-A simple example:
+Named Entity Recognition (NER) is an application of Natural Language Processing (NLP) that processes and understands large amounts of unstructured human language. Also known as entity identification, entity chunking and entity extraction. NER extraction is the first step in answering questions, retrieving information and topic modeling. There are many models for implementing NER depending on the application need. Here we compare Spacy pre-trained and Stanford NER models.
 
-![image](https://user-images.githubusercontent.com/84801896/125066162-4deb0780-e0d0-11eb-8800-3549eac2b2f0.png)
- Using NER, you can automate endless tasks, with almost no human intervention.
- ### How to Do Named Entity Recognition with Python
- 
- MonkeyLearn is a SaaS platform with an array of pre-built NER tools and SaaS APIs in Python, like person extractor, company extractor, location extractor, and more.
- 
- ### 1. Install MonkeyLearn Python SDK
- The API tab shows how to integrate using your own Python code (or Ruby, PHP, Node, or Java). We’ll start performing NER with MonkeyLearn’s Python API for our pre-built company extractor. The API will access the extractor automatically:
- 
- ![image](https://user-images.githubusercontent.com/84801896/125066448-a4584600-e0d0-11eb-8403-df4795a10cd4.png)
+### Applications and Use Cases of NER
+NER has various applications in multiple industries such as news and media, search engines,  and content recommendations.
 
+### Use Cases of Named Entity Recognition:
 
-You can send plain requests to the MonkeyLearn API and parse the JSON responses yourself, but MonkeyLearn offers easy integration with SDKs in a number of languages. 
+* Information Extraction Systems
+* Question-Answer Systems
+* Machine Translation Systems
+* Automatic Summarizing Systems
+* Semantic Annotation
 
-Sign up to get your API key then download and install the Python SDK:
+### Workflow for NER
+An NER System is capable of discovering entity elements from raw data and determines the category the element belongs to. The system reads the sentence and highlights the important entity elements in the text. NER might be given separate sensitive entities depending on the project. This means that NER systems designed for one project may not be reused for another task.
 
- ```
- pip install monkeylearn
- ```
- 
-### 2.Run your NER model
-Now that you're set up, enter the below to start running MonkeyLearn’s NER analysis:
- ```
-rom monkeylearn import MonkeyLearn
+For a general entity such as name, location, organization, date and pre-trained library, Stanford NER and Spacy can be used. But for a domain specific entity, an NER model can be trained with custom training data requires lots of human efforts and time. There are a few other approaches such as, Feedforward Neural Networks for NER, BILSTM, CNNS, and Residual Stack BILSTMS with Biased Decoding which can be used to perform NER using deep learning. 
 
-ml = MonkeyLearn('<<Your API key here>>')
-model_id = 'ex_A9nCcXfn'
-data = ['first text', {'text': 'SpaceX is an aerospace manufacturer and space transport services company headquartered in California. It was founded in 2002 by entrepreneur and investor Elon Musk with the goal of reducing space transportation costs and enabling the colonization of Mars.', 'external_id': 'ANY_ID'}, '']
-response = ml.extractors.extract(model_id, data=data)
-
-print(response.body)
-```
-### 3. Output your model
-The output will be a Python dict generated from the JSON sent by MonkeyLearn – in the same order as the input text – and should look something like this:
-
-```
-[
-    {
-        'text': 'first text', 
-        'external_id': None, 
-        'error': False, 
-        'extractions': []
-     }, {
-        'text': 'SpaceX is an aerospace manufacturer and space transport services company headquartered in California. It was founded in 2002 by entrepreneur and investor Elon Musk with the goal of reducing space transportation costs and enabling the colonization of Mars.', 
-        'external_id': 'ANY_ID', 
-        'error': False, 
-        'extractions': [{
-            'tag_name': 'COMPANY', 
-            'extracted_text': 'SpaceX', 
-            'parsed_value': 'SpaceX', 
-            'count': 1
-        }]
-    }, {
-        'text': '', 
-        'external_id': None, 
-        'error': True, 
-        'error_detail': 'Invalid text, empty strings are not allowed', 
-        'extractions': None
-    }
-]
-```
 ### Now you’re set up to perform NER automatically. You can change the models to try out something new or create your own model, then call it with Python.
 
 
