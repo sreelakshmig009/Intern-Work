@@ -9,7 +9,7 @@
    * If we see an image or item, we look at it intently and try to uncover a pattern that will help us distinguish it from others, and this all happens in the background.
 
 
-<img src="https://github.com/sreelakshmig009/Intern-Work/blob/feature_detection/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/reference1.png" align="middle"> 
+<img align="middle" src="https://github.com/sreelakshmig009/Intern-Work/blob/feature_detection/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/reference1.png" > 
    
 
 
