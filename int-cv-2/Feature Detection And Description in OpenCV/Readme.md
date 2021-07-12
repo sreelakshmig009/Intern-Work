@@ -1,4 +1,4 @@
-![cover](https://github.com/sreelakshmig009/Intern-Work/blob/main/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/DevIncept.jpeg)
+![cover](https://github.com/sreelakshmig009/Intern-Work/blob/feature_detection/int-cv-2/Feature%20Detection%20And%20Description%20in%20OpenCV/Images/DevIncept.jpeg)
 
 ### Feature Detection And Description Using OpenCV
 
