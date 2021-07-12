@@ -7,8 +7,8 @@
 |Member|Work Done|
 |-|-|
 |[G Sreelakshmi](https://github.com/suvrashaw?tab=repositories)|Managed Pull Requests And Creation of Markdown Files|
-|[Kashish Agarwal](https://github.com/kashish-ag)|Recorded And Edited The Video|
-|[Theertala Sai Nikesh](https://github.com/SaiNikesh29)|Contributed To The Content |
+|[Kashish Agarwal](https://github.com/kashish-ag)|Recorded The Video|
+|[Theertala Sai Nikesh](https://github.com/SaiNikesh29)|Contributed To The Content And Edited The Video|
 
 ### Overview of the Content
 
