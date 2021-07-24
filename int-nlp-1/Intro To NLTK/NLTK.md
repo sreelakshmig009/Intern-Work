@@ -15,8 +15,7 @@ Language could be a technique of communication with the assistance of that we ar
 
   
   
-  ### image source:
-  https://www.canva.com/design/DAEjzaeq5lY/IsSR8NNIgHgrGLhL80rD-w/edit?layoutQuery=Flowchart#
+  ### ( Image source: https://www.canva.com/design/DAEjzaeq5lY/IsSR8NNIgHgrGLhL80rD-w/edit?layoutQuery=Flowchart# )
   
 ### Natural Language Tool Kit (NLTK)
 Among the above-named natural language processing tool, NLTK scores terribly high once it involves the convenience of use and rationalization of the idea. The learning curve of Python is extremely quick and NLTK is written in Python thus NLTK is additionally having excellent learning kit. NLTK has incorporated most of the tasks like tokenization, stemming, Lemmatization, Punctuation, Character Count, and Word count and is terribly elegant and simple to figure with.
@@ -165,25 +164,71 @@ Splitting the sentence into words or making an inventory of words from a string 
 
 Named entity recognition (NER), or named entity extraction is a keyword extraction technique that uses natural language processing (NLP) to automatically identify named entities within raw text and classify them into predetermined categories, like people, organizations, email addresses, locations, values, etc.
 
-Named Entity Recognition (NER) is an application of Natural Language Processing (NLP) that processes and understands large amounts of unstructured human language. Also known as entity identification, entity chunking and entity extraction. NER extraction is the first step in answering questions, retrieving information and topic modeling. There are many models for implementing NER depending on the application need. Here we compare Spacy pre-trained and Stanford NER models.
+A simple example:
 
-### Applications and Use Cases of NER
-NER has various applications in multiple industries such as news and media, search engines,  and content recommendations.
+![image](https://user-images.githubusercontent.com/84801896/125066162-4deb0780-e0d0-11eb-8800-3549eac2b2f0.png)
 
-### Use Cases of Named Entity Recognition:
+ Using NER, you can automate endless tasks, with almost no human intervention.
+ ### How to Do Named Entity Recognition with Python
+ 
+ MonkeyLearn is a SaaS platform with an array of pre-built NER tools and SaaS APIs in Python, like person extractor, company extractor, location extractor, and more.
+ 
+ ### 1. Install MonkeyLearn Python SDK
+ The API tab shows how to integrate using your own Python code (or Ruby, PHP, Node, or Java). Start with performing NER with MonkeyLearn’s Python API on the pre-built company extractor. The API will access the extractor automatically:
+ 
+ ![image](https://user-images.githubusercontent.com/84801896/125066448-a4584600-e0d0-11eb-8403-df4795a10cd4.png)
 
-* Information Extraction Systems
-* Question-Answer Systems
-* Machine Translation Systems
-* Automatic Summarizing Systems
-* Semantic Annotation
 
-### Workflow for NER
-An NER System is capable of discovering entity elements from raw data and determines the category the element belongs to. The system reads the sentence and highlights the important entity elements in the text. NER might be given separate sensitive entities depending on the project. This means that NER systems designed for one project may not be reused for another task.
+Plain requests can be sent to the MonkeyLearn API and JSON responses can be parsed yourself, but MonkeyLearn offers easy integration with SDKs in a number of languages. 
 
-For a general entity such as name, location, organization, date and pre-trained library, Stanford NER and Spacy can be used. But for a domain specific entity, an NER model can be trained with custom training data requires lots of human efforts and time. There are a few other approaches such as, Feedforward Neural Networks for NER, BILSTM, CNNS, and Residual Stack BILSTMS with Biased Decoding which can be used to perform NER using deep learning. 
+Sign up to get your API key then download and install the Python SDK:
 
-### Now you’re set up to perform NER automatically. You can change the models to try out something new or create your own model, then call it with Python.
+ ```
+ pip install monkeylearn
+ ```
+ 
+### 2.Run your NER model
+As now everything is set up, enter the below to start running MonkeyLearn’s NER analysis:
+ ```
+rom monkeylearn import MonkeyLearn
+
+ml = MonkeyLearn('<<Your API key here>>')
+model_id = 'ex_A9nCcXfn'
+data = ['first text', {'text': 'DevIncept is An environment, where you not only have to read or watch videos but interactive modules where you can test your skills and compete with other participants. ', 'external_id': 'ANY_ID'}, '']
+response = ml.extractors.extract(model_id, data=data)
+
+print(response.body)
+```
+### 3. Output your model
+The result will is a Python dict generated from the JSON sent by MonkeyLearn – in the same order as the input text – and should look something like this:
+
+```
+[
+    {
+        'text': 'first text', 
+        'external_id': None, 
+        'error': False, 
+        'extractions': []
+     }, {
+        'text': 'DevIncept is An environment, where you not only have to read or watch videos but interactive modules where you can test your skills and compete with other participants.', 
+        'external_id': 'ANY_ID', 
+        'error': False, 
+        'extractions': [{
+            'tag_name': 'COMPANY', 
+            'extracted_text': 'DevIncept', 
+            'parsed_value': 'DevIncept', 
+            'count': 1
+        }]
+    }, {
+        'text': '', 
+        'external_id': None, 
+        'error': True, 
+        'error_detail': 'Invalid text, empty strings are not allowed', 
+        'extractions': None
+    }
+]
+```
+### Now as everything is set up, we can perform NER automatically. You can change the models to try out something new or create your own model, then call it with Python.
 
 
 
@@ -201,7 +246,7 @@ For a general entity such as name, location, organization, date and pre-trained 
 ![flowchart](https://user-images.githubusercontent.com/84801896/125165104-228d1900-e1b3-11eb-80bb-2a47a538c310.png)
 
 
-### image source :https://medium.com/mlearning-ai/basic-steps-in-natural-language-processing-pipeline-763cd299dd99
+### ( Image source :https://medium.com/mlearning-ai/basic-steps-in-natural-language-processing-pipeline-763cd299dd99 )
 
 * Natural Language Toolkit
 
@@ -229,4 +274,12 @@ For a general entity such as name, location, organization, date and pre-trained 
 
 [5] https://realpython.com/nltk-nlp-python/
   
+[6] https://towardsdatascience.com/
 
+[7] https://medium.com/mlearning-ai/basic-steps-in-natural-language-processing-pipeline-763cd299dd99
+
+[8] https://www.canva.com/design/DAEjzaeq5lY/IsSR8NNIgHgrGLhL80rD-w/edit?layoutQuery=Flowchart
+
+[9] https://www.sciencedirect.com/topics/mathematics/real-world-data
+
+[10] https://www.geeksforgeeks.org/nlp-part-of-speech-default-tagging/#:~:text=Whats%20is%20Part%2Dof%2Dspeech,%2C%20verb%2C%20and%20so%20on.
