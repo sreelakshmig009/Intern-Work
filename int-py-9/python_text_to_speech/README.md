@@ -1,42 +1,29 @@
-# python_text_to_speech
-## What is pyttsx3 ?
-- A python library that will help us to convert text to speech. In short, it is a text-to-speech library.
-- It works offline, and it is compatible with Python 2 as well as Python 3.
+# **What is a Matplotlib?**
 
-Installation:
+### **Team: int-py-9**
 
-    pip install pyttsx3
-In case you receive such errors: 
-- No module named win32com.client
-- No module named win32
-- No module named win32api
+Team Members:
 
-Then, install pypiwin32 by typing the below command in the terminal :
+- Name
 
-    pip install pypiwin32
+1. Shekhar Kumar
+2. Saurabh Jain
 
-After successfully installing pyttsx3, import this module into your program.
+### **About the topic:**
 
-Usage:
+This topic consists of What is a pyttsx3 ?, Installation, Importing, Some basic example
 
-    import pyttsx3
+Contents: 📋
 
-    engine = pyttsx3.init('sapi5')
+(1) What is a pyttsx3 ?
 
-### What is sapi5?
-- Microsoft developed speech API.
-- Helps in synthesis and recognition of voice.
+(2) Installation
 
-Let's take an example
+(3) Importing
 
-    # Import the required module for text to speech conversion
-    import pyttsx3
+(4) Some Basic Example
 
-    # init function to get an engine instance for the speech synthesis
-    engine = pyttsx3.init('sapi5')
+Work flow 📑
 
-    # say method on the engine that passing input text to be spoken
-    engine.say('Hello sir, how may I help you, sir.')
-
-    # run and wait method, it processes the voice commands.
-    engine.runAndWait()
+- Saurabh Jain: Worked on Content writing and Markdown.
+- Shekhar kumar: Worked on Video Editing.
