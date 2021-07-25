@@ -14,6 +14,8 @@
 
 * It's an additive colour model in which the various intensities of Blue, Green, and Red produce various hues of colour.
 
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/bgr.png" width="100" height="100">
+
 ### HSV color space(for hue, saturation, value):
 
 * It uses a cylindrical representation of RGB colour points to store colour information.
@@ -24,6 +26,8 @@
 
 *  It's primarily used for colour segmentation.
 
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsv.png" width="100" height="100">
+
 ### HSL color space (for hue, saturation, lightness):
 
 * The lightness dimension resembles the shifting amounts of black or white paint in the mixing in the HSL representation, which simulates how different colours mix together to create colour in the real world
@@ -31,6 +35,8 @@
 * E.g. to create "light red", a red pigment can be mixed with white paint; this white paint corresponds to a high "lightness" value in the HSL representation
 
 * At a lightness value of 12, fully saturated colours are put around a circle, with a lightness value of 0 or 1 corresponding to entirely black or white, respectively.
+
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsl.png" width="100" height="100">
 
 ### CMYK color space: 
 
@@ -43,3 +49,5 @@
 * Because inks “subtract” the hues red, green, and blue from white light, this paradigm is called subtractive.
 
 * White light with red leaves turned cyan, green leaves turned magenta, and blue foliage turned yellow.
+
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/cmyk.png" width="100" height="100">
