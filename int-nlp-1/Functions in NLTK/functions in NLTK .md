@@ -39,6 +39,9 @@ There are numerous uses of doing this. We can use this tokenized form to:
 * Count the number of words in the text
 * Count the frequency of the word, that is, the number of times a particular word is present
 
+![Screenshot (27)](https://user-images.githubusercontent.com/84801896/126888858-9c4ac344-3a39-45a2-a796-bbf189d1cd82.png)
+
+
 
 # Stemming
 Stemming is the process of producing morphological variants of a root/base word. Stemming programs are commonly referred to as stemming algorithms or stemmers. A stemming algorithm reduces the words “chocolates”, “chocolatey”, “choco” to the root word, “chocolate” and “retrieval”, “retrieved”, “retrieves” reduce to the stem “retrieve”. Stemming is an important part of the pipelining process in Natural language processing. The input to the stemmer is tokenized words. How do we get these tokenized words? Well, tokenization involves breaking down the document into different words. To know in detail about tokenization and its working refer the article :
@@ -49,59 +52,8 @@ Stemming is the process of producing morphological variants of a root/base word.
 * "likely"
 * "liking"
 
-# Here some of the Algortithms Regarding Stemming 
+![Screenshot (28)](https://user-images.githubusercontent.com/84801896/126888869-aaf55eff-2754-4a6f-b139-8210cbd9381b.png)
 
- ## Lancaster stemming algorithm
-  It was developed at Lancaster University and it is another very common stemming algorithms.
-  LancasterStemmer class NLTK has LancasterStemmer class with the help of which we can easily implement Lancaster Stemmer algorithms for the word we want to stem. Let us see an example −
-   
- ### First, we need to import the natural language toolkit(nltk).
-   
-*  import nltk
-*  from nltk.stem import PorterStemmer
-*  word_stemmer = PorterStemmer()
-*  word_stemmer.stem('eats')
-   
-![3](https://user-images.githubusercontent.com/84801896/124071631-463abb80-da5d-11eb-8e4c-c93505153afe.PNG)
-   
-   
-## Regular Expression stemming algorithm
-   
-With the help of this stemming algorithm, we can construct our own stemmer.
-
-RegexpStemmer class NLTK has RegexpStemmer class with the help of which we can easily implement Regular Expression Stemmer algorithms. It basically takes a single regular expression and removes any prefix or suffix that matches the expression. Let us see an example −
-
-### First, we need to import the natural language toolkit(nltk).
-   
-*  import nltk
-*  from nltk.stem import RegexpStemmer
-*  Reg_stemmer = RegexpStemmer("ing")
-*  Reg_stemmer.stem('eating')
-   
-   
-   ![4](https://user-images.githubusercontent.com/84801896/124071731-6ec2b580-da5d-11eb-849a-1c79bdb0fc50.PNG)
-   
- ## Snowball stemming algorithm
-   
-It is another very useful stemming algorithm.
-SnowballStemmer class NLTK has SnowballStemmer class with the help of which we can easily implement Snowball Stemmer algorithms. It supports 15 non-English languages. In order to use this steaming class, we need to create an instance with the name of the language we are using and then call the stem() method. Let us see an example −
-   
-### First, we need to import the natural language toolkit(nltk)
-   
-*  import nltk
-*  from nltk.stem import SnowballStemmer
-*  SnowballStemmer.languages
-   
-![5](https://user-images.githubusercontent.com/84801896/124071842-9ade3680-da5d-11eb-84b7-b2bbe1f6e427.PNG)
-   
-*  import nltk
-*  from nltk.stem import SnowballStemmer
-*  French_stemmer = SnowballStemmer("french")
-*  French_stemmer.stem ("Bonjoura")
-   
-   
-![6](https://user-images.githubusercontent.com/84801896/124071934-b6e1d800-da5d-11eb-992f-73e155da754c.PNG)
-   
    
  #  Lemmatization
    
@@ -115,17 +67,8 @@ NLTK provides WordNetLemmatizer class which is a thin wrapper around the wordnet
 *  nltk.download('wordnet')
 *  from nltk.stem import WordNetLemmatizer
   
-   
+   ![Screenshot (29)](https://user-images.githubusercontent.com/84801896/126888905-920a9a90-fe01-48dc-b703-fa8f3ad40395.png)
 
-   ## Create WordNetLemmatizer object
-*  wnl = WordNetLemmatizer()
-  
-*  ### Single word lemmatization examples
-*  list1 = ['kites', 'babies', 'dogs', 'flying', 'smiling', 'driving', 'died', 'tried', 'feet']
-*  for words in list1:
-    print(words + " ---> " + wnl.lemmatize(words))
-   
-![7](https://user-images.githubusercontent.com/84801896/124072061-e98bd080-da5d-11eb-859b-361ad9183f44.PNG)
 
 # POS Tagging
 
