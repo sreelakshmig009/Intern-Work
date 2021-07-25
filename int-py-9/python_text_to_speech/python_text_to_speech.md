@@ -1,4 +1,5 @@
 # python_text_to_speech
+
 ## What is pyttsx3 ?
 - A python library that will help us to convert text to speech. In short, it is a text-to-speech library.
 - It works offline, and it is compatible with Python 2 as well as Python 3.
@@ -24,6 +25,12 @@ Usage:
     import pyttsx3
     engine = pyttsx3.init('sapi5')
 
+## Why use python text to speech and difference with others
+- Text-to-speech(TTS) technology reads aloud digital text. It can take words on computers, smartphones, tablets and convert them into audio.
+- All kinds of text files can be read aloud, including Word, pages document, online web pages can be read aloud.
+
+## Why pyttsx?
+It works offline, unlike other text-to-speech libraries. Rather than saving the text as audio file, pyttsx actually speaks it there. This makes it more reliable to use for voice-based projects. 
 ### What is sapi5?
 - Microsoft developed speech API.
 - Helps in synthesis and recognition of voice.
@@ -52,6 +59,30 @@ Let's take an example
 
     # say method on the engine that passing input text to be spoken
     engine.say('Hello sir, how may I help you, sir.')
+
+    # run and wait method, it processes the voice commands.
+    engine.runAndWait()
+
+Another Example
+
+    # Import the required module for text
+    # to speech conversion
+    import pyttsx3
+    import datetime
+    # init function to get an engine instance for the speech synthesis
+    engine = pyttsx3.init('sapi5')
+
+    hour = int(datetime.datetime.now().hour)
+        if hour >= 0 and hour < 12:
+        engine.say("Good Morning")
+
+        elif hour >= 12 and hour < 18:
+        engine.say("Good Afternoon")
+
+        else:
+        engine.say("Good Evening")
+
+    engine.say("I am AI 2.0, Please tell me how may I help you")
 
     # run and wait method, it processes the voice commands.
     engine.runAndWait()
