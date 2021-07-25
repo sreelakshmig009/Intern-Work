@@ -36,9 +36,8 @@ pip install pygame
 
 ## **_Team Contribution_**
 
- - _Rammya Dharshini K_ - Content Writing + Readme File 
- - _Nagashree M S_ 
- - _Prajakta Deokule_ 
+ - _Rammya Dharshini K_ - Content Writing + Readme File + Video Recording and Editing
+
 
 ## **_Team Members_**
 
