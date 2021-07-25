@@ -39,18 +39,6 @@ There are numerous uses of doing this. We can use this tokenized form to:
 * Count the number of words in the text
 * Count the frequency of the word, that is, the number of times a particular word is present
 
-(a) Import the NLTK module and download the text resources needed for the examples.
-
-![image](https://github.com/PranavKapoor28/Intern-Work/blob/main/int-nlp-1/Intro%20To%20NLTK/Images/installation.PNG)  
-
-
-(b) Take a sentence and tokenize into words. Then apply a part-of-speech tagger.
-
-![image](https://github.com/PranavKapoor28/Intern-Work/blob/main/int-nlp-1/Intro%20To%20NLTK/Images/TOKENIZER%20INSTALL.PNG)  
-
-(c) From the tagged words, identify the proper names
-
-![image](https://github.com/PranavKapoor28/Intern-Work/blob/main/int-nlp-1/Intro%20To%20NLTK/Images/identifying%20names.PNG) 
 
 # Stemming
 Stemming is the process of producing morphological variants of a root/base word. Stemming programs are commonly referred to as stemming algorithms or stemmers. A stemming algorithm reduces the words “chocolates”, “chocolatey”, “choco” to the root word, “chocolate” and “retrieval”, “retrieved”, “retrieves” reduce to the stem “retrieve”. Stemming is an important part of the pipelining process in Natural language processing. The input to the stemmer is tokenized words. How do we get these tokenized words? Well, tokenization involves breaking down the document into different words. To know in detail about tokenization and its working refer the article :
