@@ -241,6 +241,11 @@ gameLoop()
 
 ---
 
+## Output
+
+![Py-1Image](https://user-images.githubusercontent.com/70591317/126902101-6b53ebd0-c9c6-4c07-90f2-e5ed3da64048.png)
+
+
 ## Thank you
 
 ### Content By - Rammya Dharshini K
