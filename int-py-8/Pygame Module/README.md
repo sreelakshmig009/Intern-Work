@@ -8,11 +8,10 @@
 
 ## **_File Links_** 
 
-1. _Content File_ - [Pandas Function]()
+1. _Content File_ - [Pandas Function](https://github.com/rammya29/Intern-Work/blob/main/int-py-8/Pygame%20Module/pygame.md)
 
 2. _Videos_ - [Explanation]() 
 
-3. _Images_ - [Used in Content File]()
 
 ## **_Overview Of Pygame_**
 
