@@ -14,7 +14,7 @@
 
 * It's an additive colour model in which the various intensities of Blue, Green, and Red produce various hues of colour.
 
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/bgr.png" width="100" height="100">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/bgr.png" width="200" height="200">
 
 ### HSV color space(for hue, saturation, value):
 
@@ -26,7 +26,7 @@
 
 *  It's primarily used for colour segmentation.
 
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsv.png" width="100" height="100">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsv.jpg" width="200" height="200">
 
 ### HSL color space (for hue, saturation, lightness):
 
@@ -36,7 +36,7 @@
 
 * At a lightness value of 12, fully saturated colours are put around a circle, with a lightness value of 0 or 1 corresponding to entirely black or white, respectively.
 
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsl.png" width="100" height="100">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/hsl.png" width="200" height="200">
 
 ### CMYK color space: 
 
@@ -50,4 +50,4 @@
 
 * White light with red leaves turned cyan, green leaves turned magenta, and blue foliage turned yellow.
 
-<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/cmyk.png" width="100" height="100">
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/cmyk.png" width="200" height="200">
