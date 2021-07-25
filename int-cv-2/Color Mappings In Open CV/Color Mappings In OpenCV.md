@@ -1,5 +1,8 @@
 # Color Spaces in OpenCV
 
+![cover](https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/Cover.jpeg)
+
+
 * <b>Color spaces</b> are a way to represent the color channels present in the image that gives the image that particular hue. 
  
 * There are several different color spaces and each has its own significance.
