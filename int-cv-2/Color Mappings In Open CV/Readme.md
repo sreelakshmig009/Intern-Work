@@ -1,4 +1,4 @@
-![cover](https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/Cover.jpeg)
+![cover](https://github.com/sreelakshmig009/Intern-Work/blob/color_spaces/int-cv-2/Color%20Mappings%20In%20Open%20CV/Images/Cover-Org.jpeg)
 
 ### Color Mappings in OpenCV
 
