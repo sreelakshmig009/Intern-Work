@@ -11,46 +11,40 @@
 - ### Structure —
     1. **[templates](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/templates)**: The HTML files are kept in this folder. 
     2. **[static](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/static)**: Static files, such as images, are stored in this folder.
-    3. [Dataset.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
+    3. [iris.csv](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/Dataset.csv): This is the sample dataset, converted to csv. Download the Dataset from [Here](https://www.kaggle.com/uciml/iris/download).
     4. **[app.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/app.py)**: This is a python file that contains the code for our application. The Flask Server is started here.
-    5. **[iri.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
+    5. **[iris.pkl](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iri.pkl)**: This is the pickel file, which has been saved as a model.
     6. **[iris.py](https://github.com/suvrashaw/Intern-Work/blob/main/int-cv-5/Using_flask_for_ML_models/src/iris.py)**: The model is created in this python file.
 
-> Other files like Procfile, requirements.txt, basics.py, etc are for the Heroku deployment.
-
-- ### Requirements —
-    - **pandas**==1.0.3
+- ### Requirements (saved into a text file for Heroku deployment) —
     - **Flask**==1.1.1
-    - **numpy**==1.18.1
-    - **scikit_learn**==0.22.1
-    - **gunicorn**==20.0.4
-> The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The ML prediction model is given as follows —
+    - **gunicorn**==19.9.0
+    - itsdangerous==1.1.0
+    - Jinja2==2.10.1
+    - MarkupSafe==1.1.1
+    - Werkzeug==0.15.5
+    - **numpy**>=1.9.2
+    - **scipy**>=0.15.1
+    - **scikit-learn**>=0.18
+    - **pandas**>=0.19
 
-    python
-    import pandas as pd
-    import numpy as np
-    import pickle
+### The model is saved using the Pickle library after it has been built. Then, Flask is used for the web server. The SVM model is given here —
 
-    df = pd.read_csv('Dataset.csv')
-    df = df.drop(columns = ['Id'])
+        import pandas as pd
+        df=pd.read_csv("Iris.csv").drop(columns=['Id'])
 
-    X = np.array(df.iloc[:, 0:4])
-    y = np.array(df.iloc[:, 4:])
+        from sklearn.preprocessing import LabelEncoder
+        df['Species'] = LabelEncoder().fit_transform(df['Species'])
 
-    from sklearn.preprocessing import LabelEncoder
-    le = LabelEncoder()
-    y = le.fit_transform(y.reshape(-1))
+        from sklearn.model_selection import train_test_split
+        x_train, x_test, y_train, y_test = train_test_split(df.drop(columns=['Species']), df['Species'], test_size=0.3)
 
-    from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+        from sklearn.svm import SVC
+        SVM = SVC(kernel = 'linear').fit(x_train, y_train)
 
-    from sklearn.linear_model import LogisticRegression
-    sv = LogisticRegression().fit(X_train,y_train)
+        import pickle
+        pickle.dump(SVM, open("Iris.pkl", "wb"))
 
-    # print metric to get performance
-    print("Accuracy: ",sv.score(X_test, y_test) * 100)
-
-    pickle.dump(sv, open('iri.pkl', 'wb'))
 
 - ### What does deploying A Machine Learning model entail?
 
@@ -75,12 +69,12 @@
     - A lot of documentation
 > Now that you've built a variety of predictive models, it's time to learn how to use them in real-time to make predictions. When you deploy your model in production, you can always check its ability to generalize.
 
-        python
         from flask import Flask, render_template, request
         import pickle
         import numpy as np
 
-        model = pickle.load(open('iri.pkl', 'rb'))
+        model = pickle.load(open('iris.pkl', 'rb'))
+
         app = Flask(__name__)
 
         @app.route('/')
