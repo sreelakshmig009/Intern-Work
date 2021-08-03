@@ -37,7 +37,8 @@ we will take a popular example to explain Bag-of-Words (BoW) and TF-DF
 We all love watching movies (to varying degrees). 
 I tend to always look at the reviews of a movie before I commit to watching it. I know a lot of you do the same! So, I’ll use this example here.
 
-![image](https://user-images.githubusercontent.com/84801896/127961330-9019c9aa-1a67-452b-9d35-86aa68e02c96.png)
+![image](https://user-images.githubusercontent.com/84801896/127963931-edcf84cb-89e0-4679-8cef-2537351c780a.png)
+
 Image Source :https://medium.com/@MarynaL/analyzing-movie-review-data-with-natural-language-processing-7c5cba6ed922
 
 
@@ -76,7 +77,8 @@ We will first build a vocabulary from all the unique words in the above three re
 The vocabulary consists of these 11 words: ‘This’, ‘movie’, ‘is’, ‘very’, ‘scary’, ‘and’, ‘long’, ‘not’,  ‘slow’, ‘spooky’,  ‘good’.
 We can now take each of these words and mark their occurrence in the three movie reviews above with 1s and 0s. This will give us 3 vectors for 3 reviews:
 
-![image](https://user-images.githubusercontent.com/84801896/127962588-b4598ce1-caf0-456c-a3c7-704a660b313a.png)
+
+![image](https://user-images.githubusercontent.com/84801896/127963008-e18e58a1-6b74-48e2-9aa8-0c7e32609bfe.png)
 
 Image Source :https://www.analyticsvidhya.com/blog/2020/02/quick-introduction-bag-of-words-bow-tf-idf/
 
@@ -186,6 +188,14 @@ while the TF-IDF model contains information on the more important words and the 
 * Bag of Words vectors are easy to interpret. However, TF-IDF usually performs better in machine learning models.
 While both Bag-of-Words and TF-IDF have been popular in their own regard, there still remained a void where understanding the context of words was concerned. 
 * Detecting the similarity between the words ‘spooky’ and ‘scary’, or translating our given documents into another language, requires a lot more information on the documents.
+
+### Reference Links
+
+* https://www.analyticsvidhya.com/blog/2020/02/quick-introduction-bag-of-words-bow-tf-idf/
+* https://www.geeksforgeeks.org/bag-of-words-bow-model-in-nlp/
+* https://www.mygreatlearning.com/blog/bag-of-words/
+* https://medium.com/@MarynaL/analyzing-movie-review-data-with-natural-language-processing-7c5cba6ed922
+
 
 
 
