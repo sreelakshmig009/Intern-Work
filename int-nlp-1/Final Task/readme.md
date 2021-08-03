@@ -1,11 +1,10 @@
 # NLP : introduction to Bag of words,TF-IDF 👩‍💻
-## **Folder contains**:
-1. **Description** 
-2. **Implementation**
 
-## **Aim**: **To show exactly how the bag of words and TF-IDF **
+## **Aim**:To show exactly how the bag of words and TF-IDF  
 ### BAG OF WORDS & TF-IDF
-* ###### what is bag of  bag of words in NLP?
+* ###### Bag of words in NLP?
+* ###### what exactly is bag of words
+* ###### Why is the Bag-of-Words algorithm used? 
 * ###### Bag of words Bow model?
 * ###### Creating Vectors from Text
 * ###### Drawbacks of using a Bag-of-Words (BoW) Model
