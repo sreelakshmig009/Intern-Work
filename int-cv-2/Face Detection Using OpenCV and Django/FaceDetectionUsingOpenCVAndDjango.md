@@ -1,4 +1,4 @@
-
+<img src ="https://github.com/sreelakshmig009/Intern-Work/blob/face_detection/int-cv-2/Face%20Detection%20Using%20OpenCV%20and%20Django/images/cover.jpeg" alt="cover">
 
 
 ### Face Detection with OpenCV and Django REST API
@@ -210,3 +210,7 @@ $ python test_api.py
 ```
 
 First, we’ll see the image of the bounding box drawn around Modi’s face followed by the successful detection and bouding box over your custom image.
+
+This is the output I got when I tried with Tom Cruise's image
+
+<img src = "https://github.com/sreelakshmig009/Intern-Work/blob/face_detection/int-cv-2/Face%20Detection%20Using%20OpenCV%20and%20Django/images/tomcruise.jpg">
